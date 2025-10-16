@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>About Brew & Beans</title>
+  <meta name='description' content='Learn about Brew & Beans—our story, values, and the people behind the coffee.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@300;400;600&display=swap' rel='stylesheet'>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            primary: ['Montserrat', 'ui-sans-serif', 'system-ui'],
+            body: ['Open Sans', 'Arial', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class='font-body text-gray-900'>
+  <!-- Navigation -->
+  <header class='bg-[#3C2415] text-white'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16'>
+      <div class='flex items-center'>
+        <a href='index.html' class='text-2xl font-bold font-primary'>Brew & Beans</a>
+      </div>
+      <div class='hidden md:block'>
+        <div class='ml-10 flex items-baseline space-x-4'>
+          <a href='index.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>Home</a>
+          <a href='about.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>About</a>
+          <a href='contact.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class='relative min-h-screen bg-cover bg-center' style='background-image: url("https://images.unsplash.com/photo-1724212101333-65133a131be6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw5fHxjb3p5JTIwY29mZmVlJTIwc2hvcCUyMGludGVyaW9yJTIwd2l0aCUyMGN1c3RvbWVycyUyMGFuZCUyMGJhcmlzdGElMjBhdCUyMHdvcmt8ZW58MHwwfHx8MTc2MDYwMTQyMnww&ixlib=rb-4.1.0&q=80&w=1080");'>
+    <div class='absolute inset-0 bg-black opacity-40'></div>
+    <div class='relative z-10 max-w-4xl mx-auto px-4 py-40 text-center text-white'>
+      <h1 class='text-4xl md:text-6xl font-extrabold mb-4 font-primary'>Our Story</h1>
+      <p class='text-lg md:text-2xl mb-6 font-body'>From a sunny corner coffee cart to a neighborhood gathering space, Brew & Beans is built on community and quality.</p>
+    </div>
+  </section>
+
+  <main class='py-16'>
+    <section class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <h2 class='font-primary text-3xl md:text-4xl mb-4'>Mission & Values</h2>
+      <p class='text-body text-gray-800 leading-relaxed'>We believe that coffee is more than a drink—it's a moment shared. We source ethically grown beans, roast in small batches, and train our team to provide thoughtful hospitality. Our shop is a space for neighbors to connect, work, and unwind.</p>
+    </section>
+
+    <section class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+      <h2 class='font-primary text-3xl md:text-4xl mb-6'>Meet the Team</h2>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <div class='bg-white rounded-lg shadow p-6 text-center'>
+          <img src='https://pixabay.com/get/g869ccce3fa93d4d430bf912f87d90d7cc2306fe701cba8000420dbfd95b1ba6446d24f14b742c960c1d4186c4db6be618b22072bbb9f41595fd8b827c9cbcc2f_640.jpg' alt='Portrait of Maya, lead barista' class='mx-auto w-24 h-24 rounded-full object-cover mb-4'>
+          <h3 class='font-primary text-xl mb-1'>Maya Chen</h3>
+          <p class='text-sm text-gray-600'>Lead Barista</p>
+        </div>
+        <div class='bg-white rounded-lg shadow p-6 text-center'>
+          <img src='https://pixabay.com/get/ga7856457736db5d88c0ed00353e9bfb17c56c6a9c81053e2c16618d26f48cb06dae62abaed7f85256d82527747b5bcb8cf212d375ab867fc4863b59c954cbef7_640.jpg' alt='Portrait of Diego, cafe manager' class='mx-auto w-24 h-24 rounded-full object-cover mb-4'>
+          <h3 class='font-primary text-xl mb-1'>Diego Rivera</h3>
+          <p class='text-sm text-gray-600'>Cafe Manager</p>
+        </div>
+        <div class='bg-white rounded-lg shadow p-6 text-center'>
+          <img src='https://images.pexels.com/photos/7966413/pexels-photo-7966413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Portrait of Lina, pastry chef' class='mx-auto w-24 h-24 rounded-full object-cover mb-4'>
+          <h3 class='font-primary text-xl mb-1'>Lina Patel</h3>
+          <p class='text-sm text-gray-600'>Pastry Chef</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-[#3C2415] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h3 class='text-2xl font-bold mb-4 font-primary'>Brew & Beans</h3>
+          <p class='text-gray-300 mb-4'>A cozy coffee shop offering craft beverages and a welcoming space for the community.</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Hours</h4>
+          <p class='text-sm text-gray-300'>Mon-Thu: 7:00 AM – 6:00 PM</p>
+          <p class='text-sm text-gray-300'>Fri-Sun: 7:00 AM – 8:00 PM</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Location</h4>
+          <p class='text-sm text-gray-300'>123 Coffee Lane, Caffeine City</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Links</h4>
+          <ul class='space-y-2'>
+            <li><a href='index.html' class='text-gray-300 hover:text-[#D2B48C]'>Home</a></li>
+            <li><a href='contact.html' class='text-gray-300 hover:text-[#D2B48C]'>Contact</a></li>
+            <li><a href='about.html' class='text-gray-300 hover:text-[#D2B48C]'>About</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class='border-gray-600 my-8 opacity-50'>
+      <div class='flex flex-col md:flex-row items-center justify-between text-sm text-gray-400'>
+        <span>© 2025 Brew & Beans. All rights reserved.</span>
+        <span>Locally roasted • Ethical sourcing</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
