@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Brew & Beans – Coffee Shop</title>
+  <meta name='description' content='A cozy coffee shop offering craft coffee, pastries, and a welcoming community space.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@300;400;600&display=swap' rel='stylesheet'>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            primary: ['Montserrat', 'ui-sans-serif', 'system-ui'],
+            body: ['Open Sans', 'Arial', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class='font-body text-gray-900'>
+  <!-- Navigation -->
+  <header class='bg-[#3C2415] text-white'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16'>
+      <div class='flex items-center'>
+        <a href='index.html' class='text-2xl font-bold font-primary'>Brew & Beans</a>
+      </div>
+      <div class='hidden md:block'>
+        <div class='ml-10 flex items-baseline space-x-4'>
+          <a href='index.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>Home</a>
+          <a href='about.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>About</a>
+          <a href='contact.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero with background image -->
+  <section class='relative min-h-screen bg-cover bg-center' style='background-image: url("https://pixabay.com/get/g979fee2bc33be98df619b7c6f13de648462826fbe9290a40d8ab4260b6de4a5058abe254ba83d6cff3d6e6cc42f8d27f854999c6f6232766fa31e4eacf113542_640.jpg");'>
+    <div class='absolute inset-0 bg-black opacity-50'></div>
+    <div class='relative z-10 max-w-4xl mx-auto px-4 py-32 text-center text-white'>
+      <h1 class='text-4xl md:text-6xl font-extrabold mb-4 font-primary'>Brew & Beans</h1>
+      <p class='text-lg md:text-2xl mb-8 font-body'>A neighborhood haven for craft coffee, fresh pastries, and good conversation.</p>
+      <div class='flex flex-col sm:flex-row items-center justify-center gap-4'>
+        <a href='#menu' class='bg-[#D2B48C] hover:bg-[#C89E62] text-black font-semibold py-3 px-6 rounded-full transition-all duration-300'>View Menu</a>
+        <a href='contact.html' class='bg-white text-[#3C2415] font-semibold py-3 px-6 rounded-full border border-white hover:bg-white/90 transition-all duration-300'>Find Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Highlights -->
+  <main class='py-16'>
+    <section id='menu' class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-12'>
+        <div class='p-6 rounded-lg shadow-lg bg-white transition-all duration-300 hover:shadow-2xl'>
+          <div class='text-4xl mb-4'>☕</div>
+          <h3 class='font-primary text-xl mb-2'>Espresso Classics</h3>
+          <p class='text-gray-700'>Ristretto, Americanos, and silky lattes crafted with care.</p>
+        </div>
+        <div class='p-6 rounded-lg shadow-lg bg-white transition-all duration-300 hover:shadow-2xl'>
+          <div class='text-4xl mb-4'>🥐</div>
+          <h3 class='font-primary text-xl mb-2'>Pastries & Breads</h3>
+          <p class='text-gray-700'>Croissants, muffins, and seasonal delights baked daily.</p>
+        </div>
+        <div class='p-6 rounded-lg shadow-lg bg-white transition-all duration-300 hover:shadow-2xl'>
+          <div class='text-4xl mb-4'>🍰</div>
+          <h3 class='font-primary text-xl mb-2'>Seasonal Specials</h3>
+          <p class='text-gray-700'>New flavors monthly, crafted by our baristas.</p>
+        </div>
+      </div>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <img src='https://images.unsplash.com/photo-1745710489347-9baf49d988d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwY29mZmVlJTIwYmVhbnMlMjBjbG9zZS11cHxlbnwwfDB8fHwxNzYwNjAxNDIwfDA&ixlib=rb-4.1.0&q=80&w=1080' alt='Close-up of freshly roasted coffee beans' class='rounded-lg w-full h-48 object-cover'>
+        <img src='https://pixabay.com/get/gba9e4f8210fb493fe0dc1ffa05bd8a7b7b5ec46bf658514c5e46c8733001d2b417093e90f7048b859e2df4651c54722f70933d171e3391e021309dce9eaa416d_640.jpg' alt='Cozy seating with warm lighting' class='rounded-lg w-full h-48 object-cover'>
+        <img src='https://pixabay.com/get/g940b835341398210cc7ae09e1f86f86889f16bf52080bdef10241dbdf2fa4891429f06d5553e5ce47aadbe225d3229ce0cf0e980d91290bd78b6207a9b54d055_640.jpg' alt='Barista pouring latte art' class='rounded-lg w-full h-48 object-cover'>
+      </div>
+    </section>
+
+    <section class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16'>
+      <h2 class='font-primary text-3xl md:text-4xl mb-4'>Our Story</h2>
+      <p class='text-body text-gray-800 leading-relaxed'>Brew & Beans began as a simple idea: create a space where neighbors could gather over great coffee and pastries. We source beans from small, sustainable farms and roast in small batches to preserve flavor and aroma. Our baristas are passionate about coffee, community, and making your day a little brighter.</p>
+    </section>
+
+    <section class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8'>
+      <h2 class='font-primary text-3xl md:text-4xl mb-6'>What people are saying</h2>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+        <blockquote class='p-6 bg-white rounded-lg shadow'>
+          <p class='mb-2'>“The best cappuccino in town. Friendly staff and cozy vibes.”</p>
+          <footer class='text-sm text-gray-500'>- Jamie P.</footer>
+        </blockquote>
+        <blockquote class='p-6 bg-white rounded-lg shadow'>
+          <p class='mb-2'>“Pastry selection is outstanding and the seasonal drinks are a must-try.”</p>
+          <footer class='text-sm text-gray-500'>- Alex R.</footer>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='bg-[#3C2415] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h3 class='text-2xl font-bold mb-4 font-primary'>Brew & Beans</h3>
+          <p class='text-gray-300 mb-4 leading-relaxed'>A cozy coffee shop offering craft beverages and a welcoming space for the community.</p>
+          <div class='flex space-x-4'>
+            <a href='#' class='text-gray-300 hover:text-[#D2B48C] transition-colors duration-300'>Facebook</a>
+            <a href='#' class='text-gray-300 hover:text-[#D2B48C] transition-colors duration-300'>Instagram</a>
+          </div>
+        </div>
+
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Contact</h4>
+          <p class='text-sm text-gray-300'>123 Coffee Lane, Caffeine City</p>
+          <p class='text-sm text-gray-300'>Phone: (555) 012-3456</p>
+          <p class='text-sm text-gray-300'>Email: hello@brewbeans.co</p>
+        </div>
+
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Hours</h4>
+          <p class='text-sm text-gray-300'>Mon-Thu: 7:00 AM – 6:00 PM</p>
+          <p class='text-sm text-gray-300'>Fri-Sun: 7:00 AM – 8:00 PM</p>
+        </div>
+
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Links</h4>
+          <ul class='space-y-2'>
+            <li><a href='index.html' class='text-gray-300 hover:text-[#D2B48C] transition-colors duration-300'>Home</a></li>
+            <li><a href='about.html' class='text-gray-300 hover:text-[#D2B48C] transition-colors duration-300'>About</a></li>
+            <li><a href='contact.html' class='text-gray-300 hover:text-[#D2B48C] transition-colors duration-300'>Contact</a></li>
+            <li><a href='#menu' class='text-gray-300 hover:text-[#D2B48C] transition-colors duration-300'>Menu</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class='border-gray-600 my-8 opacity-50'>
+
+      <div class='flex flex-col md:flex-row justify-between items-center'>
+        <div class='text-center md:text-left mb-4 md:mb-0'>
+          <p class='text-gray-400 text-sm'>© 2025 Brew & Beans. All rights reserved.</p>
+          <p class='text-gray-400 text-sm mt-1'>Fair trade • Local roastery</p>
+        </div>
+        <div class='flex space-x-6'>
+          <a href='#' class='text-gray-400 hover:text-[#D2B48C] text-sm transition-colors duration-300'>Privacy Policy</a>
+          <a href='#' class='text-gray-400 hover:text-[#D2B48C] text-sm transition-colors duration-300'>Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
